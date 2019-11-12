@@ -20,10 +20,10 @@ import { ContactDetailsForm } from '../../forms';
 import { TopbarContainer } from '../../containers';
 
 import { isScrollingDisabled } from '../../ducks/UI.duck';
-import { saveContactDetails, saveContactDetailsClear } from './ContactDetailsPage.duck';
-import css from './ContactDetailsPage.css';
+import { saveContactDetails, saveContactDetailsClear } from './Billing.duck';
+import css from './Billing.css';
 
-export const ContactDetailsPageComponent = props => {
+export const BillingComponent = props => {
   const {
     saveEmailError,
     savePhoneNumberError,
@@ -60,24 +60,24 @@ export const ContactDetailsPageComponent = props => {
     />
   ) : null;
 
-  const title = intl.formatMessage({ id: 'ContactDetailsPage.title' });
+  const title = intl.formatMessage({ id: 'Billing.title' });
 
   return (
     <Page title={title} scrollingDisabled={scrollingDisabled}>
       <LayoutSideNavigation>
         <LayoutWrapperTopbar>
           <TopbarContainer
-            currentPage="ContactDetailsPage"
+            currentPage="Billing"
             desktopClassName={css.desktopTopbar}
             mobileClassName={css.mobileTopbar}
           />
-          <UserNav selectedPageName="ContactDetailsPage" />
+          <UserNav selectedPageName="Billing" />
         </LayoutWrapperTopbar>
-        <LayoutWrapperAccountSettingsSideNav currentTab="ContactDetailsPage" />
+        <LayoutWrapperAccountSettingsSideNav currentTab="Billing" />
         <LayoutWrapperMain>
           <div className={css.content}>
             <h1 className={css.title}>
-              <FormattedMessage id="ContactDetailsPage.heading" />
+              <FormattedMessage id="Billing.heading" />
             </h1>
             {contactInfoForm}
           </div>
@@ -143,7 +143,7 @@ const mapDispatchToProps = dispatch => ({
   onSubmitContactDetails: values => dispatch(saveContactDetails(values)),
 });
 
-const ContactDetailsPage = compose(
+const Billing = compose(
   connect(
     mapStateToProps,
     mapDispatchToProps
@@ -151,9 +151,9 @@ const ContactDetailsPage = compose(
   injectIntl
 )(ContactDetailsPageComponent);
 
-ContactDetailsPage.loadData = () => {
+Billing.loadData = () => {
   // Since verify email happens in separate tab, current user's data might be updated
   return fetchCurrentUser();
 };
 
-export default ContactDetailsPage;
+export default Billing;

@@ -32,6 +32,7 @@ import { NamedRedirect } from './components';
 
 export const ACCOUNT_SETTINGS_PAGES = [
   'ContactDetailsPage',
+  'Billing',
   'PasswordChangePage',
   'PayoutPreferencesPage',
   'PaymentMethodsPage',
@@ -221,6 +222,13 @@ const routeConfiguration = () => {
       component: props => <ManageListingsPage {...props} />,
       loadData: ManageListingsPage.loadData,
     },
+  {
+    path: '/account',
+      name: 'Billing',
+    auth: true,
+    authPage: 'LoginPage',
+    component: () => <NamedRedirect name="Billing" />,
+  },
     {
       path: '/account',
       name: 'AccountSettingsPage',

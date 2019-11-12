@@ -5,12 +5,12 @@ import { currentUserShowSuccess } from '../../ducks/user.duck';
 
 // ================ Action types ================ //
 
-export const SAVE_CONTACT_DETAILS_REQUEST = 'app/ContactDetailsPage/SAVE_CONTACT_DETAILS_REQUEST';
-export const SAVE_CONTACT_DETAILS_SUCCESS = 'app/ContactDetailsPage/SAVE_CONTACT_DETAILS_SUCCESS';
-export const SAVE_EMAIL_ERROR = 'app/ContactDetailsPage/SAVE_EMAIL_ERROR';
-export const SAVE_PHONE_NUMBER_ERROR = 'app/ContactDetailsPage/SAVE_PHONE_NUMBER_ERROR';
+export const SAVE_CONTACT_DETAILS_REQUEST = 'app/Billing/SAVE_CONTACT_DETAILS_REQUEST';
+export const SAVE_CONTACT_DETAILS_SUCCESS = 'app/Billing/SAVE_CONTACT_DETAILS_SUCCESS';
+export const SAVE_EMAIL_ERROR = 'app/Billing/SAVE_EMAIL_ERROR';
+export const SAVE_PHONE_NUMBER_ERROR = 'app/Billing/SAVE_PHONE_NUMBER_ERROR';
 
-export const SAVE_CONTACT_DETAILS_CLEAR = 'app/ContactDetailsPage/SAVE_CONTACT_DETAILS_CLEAR';
+export const SAVE_CONTACT_DETAILS_CLEAR = 'app/Billing/SAVE_CONTACT_DETAILS_CLEAR';
 
 // ================ Reducer ================ //
 

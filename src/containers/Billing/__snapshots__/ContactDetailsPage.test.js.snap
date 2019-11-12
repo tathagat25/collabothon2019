@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContactDetailsPage matches snapshot 1`] = `
+exports[`Billing matches snapshot 1`] = `
 <Page
   scrollingDisabled={false}
-  title="ContactDetailsPage.title"
+  title="Billing.title"
 >
   <LayoutSideNavigation
     className={null}
@@ -15,16 +15,16 @@ exports[`ContactDetailsPage matches snapshot 1`] = `
       rootClassName={null}
     >
       <withRouter(Connect(TopbarContainerComponent))
-        currentPage="ContactDetailsPage"
+        currentPage="Billing"
       />
       <UserNav
         className={null}
         rootClassName={null}
-        selectedPageName="ContactDetailsPage"
+        selectedPageName="Billing"
       />
     </LayoutWrapperTopbar>
     <withViewport(LayoutWrapperAccountSettingsSideNavComponent)
-      currentTab="ContactDetailsPage"
+      currentTab="Billing"
     />
     <LayoutWrapperMain
       className={null}
@@ -33,7 +33,7 @@ exports[`ContactDetailsPage matches snapshot 1`] = `
       <div>
         <h1>
           <FormattedMessage
-            id="ContactDetailsPage.heading"
+            id="Billing.heading"
             values={Object {}}
           />
         </h1>
