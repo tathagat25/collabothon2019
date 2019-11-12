@@ -2,36 +2,55 @@ import PropertyGroup from './PropertyGroup';
 
 const exampleOptions = [
   {
-    key: 'towels',
-    label: 'Towels',
+    key: 'WLAN',
+    label: 'WLAN',     },
+  {
+    key: 'Office lockable',
+    label: 'Office lockable',
   },
   {
-    key: 'bathroom',
-    label: 'Bathroom',
+    key: 'Reception',
+    label: 'Reception',
   },
   {
-    key: 'swimming_pool',
-    label: 'Swimming pool',
+    key: 'Meeting room / conference room',
+    label: 'Meeting room / conference room',
   },
   {
-    key: 'own_drinks',
-    label: 'Own drinks allowed',
+    key: 'Facilitators toolkit',
+    label: 'Facilitators toolkit',
   },
   {
-    key: 'jacuzzi',
-    label: 'Jacuzzi',
+    key: 'Whiteboard',
+    label: 'Whiteboard',
   },
   {
-    key: 'audiovisual_entertainment',
-    label: 'Audiovisual entertainment',
+    key: 'TV',
+    label: 'TV',
   },
   {
-    key: 'barbeque',
-    label: 'Barbeque',
+    key: 'Cleaning service included',
+    label: 'Cleaning service included',
   },
   {
-    key: 'own_food_allowed',
-    label: 'Own food allowed',
+    key: 'Flipchart',
+    label: 'Flipchart',
+  },
+  {
+    key: 'Beamer',
+    label: 'Beamer',
+  },
+  {
+    key: 'Video conference equipment',
+    label: 'Video conference equipment',
+  },
+  {
+    key: 'Catering / Takeout',
+    label: 'Catering / Takeout',
+  },
+  {
+    key: 'Add parking space',
+    label: 'Add parking space',
   },
 ];
 
