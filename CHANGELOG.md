@@ -169,7 +169,7 @@ way to update this template, but currently, we follow a pattern:
   - `StripePaymenAddress` used in `StripePaymentForm` is now a separate component used also in new
     `PaymentMethodsForm`
   - New `LayoutWrapperAccountSettingsSideNav` component which is used in account settings pages:
-    `ContactDetailsPage`, `PasswordChangePage`, `PayoutPreferencesPage`, `PaymentMethodsPage`
+    `Billing`, `PasswordChangePage`, `PayoutPreferencesPage`, `PaymentMethodsPage`
 
   [#1138](https://github.com/sharetribe/flex-template-web/pull/1138)
 
@@ -445,7 +445,7 @@ There was also a couple of bug fixes you should check carefully:
   [#1025](https://github.com/sharetribe/flex-template-web/pull/1025)
 - [fix] Small changes in CSS files in order to match content width with the footer in pages where
   the footer is visible. Also, make side layout (used e.g. in `TermsOfServicePage`, `InboxPage`,
-  `ContactDetailsPage`) align width footer better. Check responsive layouts carefulle after taking
+  `Billing`) align width footer better. Check responsive layouts carefulle after taking
   update from upstream. [#1090](https://github.com/sharetribe/flex-template-web/pull/1019)
 - [add] This adds an example how user-generated content could be sanitized. If you have extended
   data you should consider if sanitization is needed for that.

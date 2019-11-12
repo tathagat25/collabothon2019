@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Billing matches snapshot 1`] = `
+<Page
+  scrollingDisabled={false}
+  title="Billing.title"
+>
+  <LayoutSideNavigation
+    className={null}
+    containerClassName={null}
+    rootClassName={null}
+  >
+    <LayoutWrapperTopbar
+      className={null}
+      rootClassName={null}
+    >
+      <withRouter(Connect(TopbarContainerComponent))
+        currentPage="Billing"
+      />
+      <UserNav
+        className={null}
+        rootClassName={null}
+        selectedPageName="Billing"
+      />
+    </LayoutWrapperTopbar>
+    <withViewport(LayoutWrapperAccountSettingsSideNavComponent)
+      currentTab="Billing"
+    />
+    <LayoutWrapperMain
+      className={null}
+      rootClassName={null}
+    >
+      <div>
+        <h1>
+          <FormattedMessage
+            id="Billing.heading"
+            values={Object {}}
+          />
+        </h1>
+      </div>
+    </LayoutWrapperMain>
+    <LayoutWrapperFooter
+      className={null}
+      rootClassName={null}
+    >
+      <injectIntl(Footer) />
+    </LayoutWrapperFooter>
+  </LayoutSideNavigation>
+</Page>
+`;
