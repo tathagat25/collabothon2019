@@ -37,10 +37,10 @@ export const PayoutPreferencesPageComponent = props => {
 
   const ensuredCurrentUser = ensureCurrentUser(currentUser);
   const currentUserLoaded = !!ensuredCurrentUser.id;
-  const stripeConnected =
-    currentUserLoaded &&
-    !!ensuredCurrentUser.stripeAccount &&
-    !!ensuredCurrentUser.stripeAccount.id;
+  const stripeConnected = true;
+    //currentUserLoaded &&
+    //!!ensuredCurrentUser.stripeAccount &&
+    //!!ensuredCurrentUser.stripeAccount.id;
 
   const title = intl.formatMessage({ id: 'PayoutPreferencesPage.title' });
   const formDisabled = !currentUserLoaded || stripeConnected || payoutDetailsSaved;
