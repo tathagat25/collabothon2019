@@ -601,12 +601,12 @@ export class CheckoutPageComponent extends Component {
     // but show payment form only when user info is loaded.
     const showPaymentForm = !!(
       currentUser &&
-      hasRequiredData &&
+      hasRequiredData/* &&
       !listingNotFound &&
       !initiateOrderError &&
       !speculateTransactionError &&
       !retrievePaymentIntentError &&
-      !isPaymentExpired
+      !isPaymentExpired*/
     );
 
     const firstImage =

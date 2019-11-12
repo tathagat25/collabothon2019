@@ -157,7 +157,7 @@ class EditListingWizard extends Component {
     const { onPublishListingDraft, currentUser } = this.props;
     const stripeConnected =
       currentUser && currentUser.stripeAccount && !!currentUser.stripeAccount.id;
-    if (stripeConnected) {
+    if (true) {
       onPublishListingDraft(id);
     } else {
       this.setState({
