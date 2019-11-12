@@ -38,10 +38,10 @@ export const amenities = [
 ];
 
 export const categories = [
-  { key: 'smoke', label: 'Smoke' },
-  { key: 'electric', label: 'Electric' },
-  { key: 'wood', label: 'Wood' },
-  { key: 'other', label: 'Other' },
+  { key: 'smoke', label: 'Single office' },
+  { key: 'electric', label: 'Shared office' },
+  { key: 'wood', label: 'Garage' },
+  { key: 'other', label: 'Creative' },
 ];
 
 // Price filter configuration

@@ -139,7 +139,7 @@ const TopbarDesktop = props => {
           format="desktop"
           className={css.logo}
           alt={intl.formatMessage({ id: 'TopbarDesktop.logo' })}
-        />
+        />WorkNMeet
       </NamedLink>
       {search}
       <NamedLink className={css.createListingLink} name="NewListingPage">
