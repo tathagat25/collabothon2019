@@ -221,6 +221,13 @@ const routeConfiguration = () => {
       component: props => <ManageListingsPage {...props} />,
       loadData: ManageListingsPage.loadData,
     },
+  {
+    path: '/account/billing',
+      name: 'Billing',
+    auth: true,
+    authPage: 'LoginPage',
+    component: () => <NamedRedirect name="Billing" />,
+  },
     {
       path: '/account',
       name: 'AccountSettingsPage',

@@ -75,6 +75,14 @@ const LayoutWrapperAccountSettingsSideNavComponent = props => {
         name: 'PaymentMethodsPage',
       },
     },
+    {
+      text: <FormattedMessage id="LayoutWrapperAccountSettingsSideNav.billingTabTitle" />,
+      selected: currentTab === 'Billing',
+      id: 'Billing',
+      linkProps: {
+        name: 'Billing',
+      },
+    },
   ];
 
   return <LayoutWrapperSideNav tabs={tabs} />;
