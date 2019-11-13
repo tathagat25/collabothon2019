@@ -1,7 +1,11 @@
 {
-  "name": "app",
-  "version": "3.6.0",
-  "private": true,
+  "name": "airwnm",
+  "main": "server.js",
+  "version": "1.0.0",
+  "private": false,
+  "engines": {
+    "node": "10.*"
+  },
   "license": "Apache-2.0",
   "dependencies": {
     "@formatjs/intl-relativetimeformat": "^4.2.1",
@@ -82,7 +86,7 @@
     "audit": "yarn audit --json | node scripts/audit.js",
     "clean": "rm -rf build/*",
     "config": "node scripts/config.js",
-    "dev": "node scripts/config.js --check && sharetribe-scripts start",
+    "prod": "node scripts/config.js --check && sharetribe-scripts start",
     "build": "sharetribe-scripts build",
     "format": "prettier --write '**/*.{js,css}'",
     "format-ci": "prettier --list-different '**/*.{js,css}'",
@@ -90,9 +94,9 @@
     "test": "NODE_ICU_DATA=node_modules/full-icu sharetribe-scripts test",
     "test-ci": "sharetribe-scripts test --runInBand",
     "eject": "sharetribe-scripts eject",
-    "start": "node --icu-data-dir=node_modules/full-icu server/index.js",
+    "start": "yarn install && yarn run config && yarn run prod",
     "dev-server": "export NODE_ENV=development PORT=4000 REACT_APP_CANONICAL_ROOT_URL=http://localhost:4000&&yarn run build&&nodemon --watch server server/index.js",
-    "heroku-postbuild": "yarn run build",
+    "postbuild": "yarn run build",
     "translate": "node scripts/translations.js"
   },
   "browserslist": {
