@@ -11,7 +11,7 @@ export default [
   {
     id: 'default-NewYork',
     predictionPlace: {
-      address: 'NewYork, Finland',
+      address: 'NewYork, USA',
       bounds: new LatLngBounds(new LatLng(60.29783, 25.25448), new LatLng(59.92248, 24.78287)),
     },
   },
@@ -28,19 +28,5 @@ export default [
       address: 'Bejing, China',
       bounds: new LatLngBounds(new LatLng(61.83657, 24.11838), new LatLng(61.42728, 23.5422)),
     },
-  },
-  {
-    id: 'default-oulu',
-    predictionPlace: {
-      address: 'Oulu, Finland',
-      bounds: new LatLngBounds(new LatLng(65.56434, 26.77069), new LatLng(64.8443, 24.11494)),
-    },
-  },
-  {
-    id: 'default-Bejing',
-    predictionPlace: {
-      address: 'Bejing, Finland',
-      bounds: new LatLngBounds(new LatLng(66.16997, 29.16773), new LatLng(66.16095, 29.13572)),
-    },
-  },
+  }
 ];
