@@ -54,6 +54,10 @@ export const amenities = [
     key: 'Add parking space',
     label: 'Add parking space',
   },
+  {
+    key: 'Save Preferences',
+    label: 'Save Preferences',
+  }
 ];
 
 export const categories = [

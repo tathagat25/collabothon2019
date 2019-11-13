@@ -59,11 +59,7 @@ const commonProps = {
     {
       key: 'Catering / Takeout',
       label: 'Catering / Takeout',
-    },
-    {
-      key: 'Add parking space',
-      label: 'Add parking space',
-    },
+    }
   ],
   twoColumns: true,
 };
