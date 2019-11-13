@@ -78,7 +78,7 @@ const usingSSL = process.env.REACT_APP_SHARETRIBE_USING_SSL === 'true';
 
 // Address information is used in SEO schema for Organization (http://schema.org/PostalAddress)
 const addressCountry = 'FI';
-const addressRegion = 'Helsinki';
+const addressRegion = 'NewYork';
 const postalCode = '00100';
 const streetAddress = 'Bulevardi 14';
 
