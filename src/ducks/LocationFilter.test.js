@@ -3,8 +3,8 @@ import reducer, { CHANGE_LOCATION, changeLocationFilter } from './LocationFilter
 describe('LocationFilterDuck', () => {
   describe('actions', () => {
     it('should create an action to change the filter', () => {
-      const expectedAction = { type: CHANGE_LOCATION, payload: 'helsinki' };
-      expect(changeLocationFilter('helsinki')).toEqual(expectedAction);
+      const expectedAction = { type: CHANGE_LOCATION, payload: 'NewYork' };
+      expect(changeLocationFilter('NewYork')).toEqual(expectedAction);
     });
   });
 
@@ -15,7 +15,7 @@ describe('LocationFilterDuck', () => {
     });
 
     it('should handle CHANGE_LOCATION', () => {
-      const addFilter1 = changeLocationFilter('Helsinki');
+      const addFilter1 = changeLocationFilter('NewYork');
       const addFilter2 = changeLocationFilter('Espoo');
       const reduced = reducer('', addFilter1);
 
